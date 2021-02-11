@@ -7,7 +7,7 @@ m = Bool('m') #mom is truthful
 
 def block_model(s):
    k = s.model()
-   return Or([a != k[a], m])
+   return a != k[a]
 
 def print_model(s):
    k = s.model()
